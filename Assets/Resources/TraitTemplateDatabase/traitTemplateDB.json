@@ -1,0 +1,418 @@
+{
+  "templates": [
+    {
+      "trait": 0,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Deep Focus Analyst",
+            "Hyper-Productivity Specialist",
+            "Flow State Consultant"
+          ],
+          "jobDescriptionTemplates": [
+            "Maintained uninterrupted 12-hour work sessions with zero bathroom breaks. Colleagues assumed I had ascended.",
+            "Pioneered the 'no notifications, no mercy' productivity framework adopted company-wide.",
+            "Delivered entire product roadmaps solo over three consecutive weekends. Did not eat.",
+            "Established a personal record of 47 tasks completed in a single sitting. The chair still has an imprint."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "Sprint Champion",
+            "Deadline Demolisher",
+            "Task Execution Lead"
+          ],
+          "jobDescriptionTemplates": [
+            "Consistently submitted deliverables before the brief was even finished being read aloud.",
+            "Refused all social invitations from Q1 through Q3 to hit annual targets. Thriving.",
+            "Automated 80% of team workflows and spent the remaining time optimizing the automation."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The No-Sleep Stack",
+            "Project: Finish It",
+            "The Grind Manifesto"
+          ],
+          "descriptionTemplates": [
+            "Built a personal productivity OS from scratch in a single weekend. It tracks everything except fun, which has been deprecated.",
+            "Wrote, edited, and self-published a 300-page focus methodology book in 72 hours.",
+            "Developed a custom browser extension that blocks all non-work tabs and plays lo-fi beats indefinitely."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "Institute of Applied Grind",
+            "Hustle University",
+            "The Focus Academy"
+          ],
+          "degreeNames": [
+            "B.S. in Uninterrupted Output",
+            "M.S. in Deep Work Studies",
+            "Ph.D. in Task Completion"
+          ],
+          "descriptionTemplates": [
+            "Graduated a year early by attending every optional lecture, office hour, and study hall. Voluntarily.",
+            "Thesis submitted three months ahead of schedule. Committee was unsettled.",
+            "Maintained a 4.0 GPA while holding three part-time jobs and sleeping exactly six hours per night."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Has not used social media since discovering it takes 23 minutes to regain focus after a notification.",
+        "Keeps a laminated copy of their daily schedule in their wallet at all times.",
+        "Once finished a 40-hour project in 14 hours and spent the rest of the time starting the next one.",
+        "Their Spotify Wrapped is 97% lo-fi hip hop. The other 3% was an accident."
+      ]
+    },
+    {
+      "trait": 1,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Director of Feline Logistics",
+            "Cat Displacement Coordinator",
+            "Senior Herder, Domestic Short-Hair Division"
+          ],
+          "jobDescriptionTemplates": [
+            "Managed relocation of 14 cats across three rooms. Eight complied. Four staged a counter-operation. Two were never found.",
+            "Successfully guided a colony of 9 feral cats to a feeding station using only patience, tuna, and a broken umbrella.",
+            "Developed a morning feeding schedule for 11 cats with 11 different dietary opinions. Zero fatalities.",
+            "Coordinated a vet visit for 6 cats simultaneously. Arrived with 6 carriers. Left with 4 cats in carriers and 2 cats in a tote bag."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "Outdoor Cat Wrangler",
+            "Feline Movement Specialist",
+            "Cat Containment Officer"
+          ],
+          "jobDescriptionTemplates": [
+            "Redirected a cat who had been sitting on the router for 4 months. Internet speeds improved immediately.",
+            "Persuaded a cat to leave a visitor's lap using only indirect eye contact and a crinkle toy. Took 45 minutes.",
+            "Established a functional indoor/outdoor transition protocol. Cats remain non-compliant but losses are down 30%."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The Tuna Incentive Model",
+            "Operation: Off The Counter",
+            "The Cat Compliance Matrix"
+          ],
+          "descriptionTemplates": [
+            "Designed a room-by-room cat routing system using treat placement and strategic door positioning. Works 40% of the time.",
+            "Documented 6 months of cat herding attempts in a behavioral log. Findings were inconclusive. Cats remain in charge.",
+            "Built a spreadsheet tracking which cats respond to which sounds, movements, and bribes. Shared widely in local rescue community."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "The Feline Studies Annex",
+            "Institute of Cat Behavioral Science",
+            "Whisker Wrangling Academy"
+          ],
+          "degreeNames": [
+            "B.S. in Applied Cat Logistics",
+            "M.A. in Feline Negotiation",
+            "Certificate in Advanced Herding Techniques (Cats Only)"
+          ],
+          "descriptionTemplates": [
+            "Thesis explored optimal treat-to-compliance ratios across 12 cat breeds. Results were statistically significant but practically useless.",
+            "Completed a 200-hour field practicum herding cats at a local shelter. Supervisor noted 'genuine persistence in the face of total indifference.'",
+            "Founded the campus Feline Logistics Club. Meetings were frequently disrupted by the one cat allowed in the building."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Can identify a cat's exact mood from the position of its tail, ears, and the specific way it is ignoring them.",
+        "Has been outsmarted by the same cat seven times. Considers it a learning experience.",
+        "Once spent 45 minutes coaxing a cat out from under a bed. The cat left on its own 3 minutes after they gave up.",
+        "Owns a herding crook. It has never once worked. They bring it anyway."
+      ]
+    },
+    {
+      "trait": 2,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Unconventional Solutions Engineer",
+            "Off-Hours Innovation Lead",
+            "Freelance Chaos Architect"
+          ],
+          "jobDescriptionTemplates": [
+            "Produced best work exclusively between 2am and 5am. Refused to explain why.",
+            "Solved a critical production bug while eating cereal directly from the box. Did not use a bowl.",
+            "Delivered consistently high-quality output despite a workspace described by HR as 'a fire hazard and a cry for help.'",
+            "Invented three internal tools during what was supposed to be a lunch break. Did not take the lunch break."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "Rogue Developer",
+            "Night Shift Specialist",
+            "Feral Operations Analyst"
+          ],
+          "jobDescriptionTemplates": [
+            "Attended all video calls from a blanket fort. Results were unimpeachable.",
+            "Submitted a 47-page technical report written entirely in one sitting at 3am. It was the best report anyone had ever read.",
+            "Optimized a legacy codebase while wearing the same hoodie for five consecutive days. It was a very good hoodie."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The Cave Project",
+            "Midnight Build Log",
+            "Goblin Stack v2.0"
+          ],
+          "descriptionTemplates": [
+            "Built a fully functional web app during a 72-hour self-imposed isolation sprint. Snacks were pre-staged.",
+            "Wrote and shipped an indie game over a long weekend in a room with the curtains permanently closed.",
+            "Created an entire personal knowledge base using tools no one has heard of, configured in ways no one would recommend."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "University of Self-Taught Everything",
+            "The Basement Academy",
+            "Night Owl College of Applied Skills"
+          ],
+          "degreeNames": [
+            "B.S. in Figuring It Out",
+            "Self-Awarded M.S. in Esoteric Knowledge",
+            "Dropout Certificate with Honors"
+          ],
+          "descriptionTemplates": [
+            "Attended irregularly but aced every exam by reading the entire textbook in one sleepless pre-exam session.",
+            "Completed an online degree entirely at night while holding a day job. The degree is framed; the sleep debt is not.",
+            "Audited 34 courses across 6 disciplines. Received credit for none. Retained everything."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Their desk has not been fully visible since 2019.",
+        "Considers a clean workspace a red flag.",
+        "Has a highly specific snack rotation that correlates directly with productivity output.",
+        "Once solved a logic puzzle that had stumped the team for a week — while half-asleep and eating cold leftovers."
+      ]
+    },
+    {
+      "trait": 3,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Personal Brand Consultant",
+            "Visual Identity Strategist",
+            "Aesthetic Optimization Lead"
+          ],
+          "jobDescriptionTemplates": [
+            "Overhauled company's visual presence and increased LinkedIn engagement by 340% through strategic headshot selection.",
+            "Advised executives on wardrobe alignment with brand values. One refused. He is no longer an executive.",
+            "Conducted a full personal brand audit for 12 team members. Results were transformative. One person cried (happy tears).",
+            "Established office dress code guidelines that raised team confidence metrics in quarterly surveys."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "Image Architect",
+            "Presentation Maximalist",
+            "First Impression Specialist"
+          ],
+          "jobDescriptionTemplates": [
+            "Prepared client-facing team for a major pitch by running a 2-hour appearance workshop. They won the contract.",
+            "Introduced lighting standards for remote video calls that improved perceived professionalism across the board.",
+            "Consulted on product photography direction resulting in a 60% increase in click-through rate."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The Glow-Up Blueprint",
+            "Project: Peak Presentation",
+            "Aesthetic Engineering Journal"
+          ],
+          "descriptionTemplates": [
+            "Documented a year-long personal optimization journey across skincare, fitness, and wardrobe into a widely-shared guide.",
+            "Developed a 90-day appearance improvement curriculum with measurable milestones and a full photo documentation protocol.",
+            "Built a wardrobe system based on capsule principles, seasonal rotation, and aggressive decluttering. Zero regrets."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "School of Visual Excellence",
+            "The Aesthetic Sciences Institute",
+            "Appearance Optimization University"
+          ],
+          "degreeNames": [
+            "B.A. in Personal Brand Management",
+            "M.S. in Applied Aesthetics",
+            "Certificate in First Impressions Engineering"
+          ],
+          "descriptionTemplates": [
+            "Won best-dressed award every semester. Accepted it graciously each time while clearly having expected it.",
+            "Thesis focused on the measurable impact of appearance on perceived competence. It was very well-presented.",
+            "Founded the campus Image Consulting Club. Membership tripled within a semester."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Has a 47-step morning routine and finishes it in 38 minutes.",
+        "Considers bad lighting a form of sabotage.",
+        "Once turned down a job offer because the office had fluorescent lighting.",
+        "Their LinkedIn profile photo has been called 'unsettlingly good' by multiple recruiters."
+      ]
+    },
+    {
+      "trait": 4,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Live Content Producer",
+            "Real-Time Broadcast Specialist",
+            "Interactive Media Host"
+          ],
+          "jobDescriptionTemplates": [
+            "Maintained a live audience of 1,200+ concurrent viewers while simultaneously troubleshooting audio issues and answering chat.",
+            "Produced 8-hour marathon streams with consistent viewer retention and only two technical meltdowns per quarter.",
+            "Built a loyal community of 40,000 followers through authentic on-camera presence and aggressive scheduling consistency.",
+            "Managed live sponsorship integrations without losing chat engagement. A delicate and highly underrated skill."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "On-Air Personality",
+            "Live Format Creator",
+            "Digital Broadcast Manager"
+          ],
+          "jobDescriptionTemplates": [
+            "Developed a live Q&A format that routinely outperformed pre-recorded content in watch time and interaction rate.",
+            "Coordinated multi-guest live panels across three timezones with zero pre-roll and minimal chaos.",
+            "Grew channel from 200 to 18,000 subscribers in one year through consistent streaming and highly specific niche content."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The Broadcast Bible",
+            "Stream Setup v4.0",
+            "Live or Die Trying"
+          ],
+          "descriptionTemplates": [
+            "Built a fully professional streaming studio in a 9x9 room using $600 and an alarming number of zip ties.",
+            "Wrote and published a comprehensive guide to starting a stream from zero, covering tech, branding, and parasocial dynamics.",
+            "Created a content calendar system used by over 300 independent streamers to manage scheduling and burn-out prevention."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "Digital Media Institute",
+            "Broadcast Arts College",
+            "The Live Content Academy"
+          ],
+          "degreeNames": [
+            "B.A. in Digital Media Production",
+            "Certificate in Live Broadcast Operations",
+            "M.S. in Audience Engagement"
+          ],
+          "descriptionTemplates": [
+            "Ran the college's live stream channel for two years, growing viewership by 800% and converting it to a credited program.",
+            "Capstone project was a 24-hour charity livestream that raised $12,000 and tested every skill simultaneously.",
+            "Studied parasocial relationships academically after observing them professionally. Both experiences were illuminating."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Has never watched a show without live-commenting it in some form.",
+        "Instinctively says 'welcome back' when someone re-enters a room.",
+        "Can read a chat moving at 200 messages per minute and still hold a conversation.",
+        "Once streamed through a power outage using a phone hotspot and a laptop on 4% battery. The stream did not end."
+      ]
+    },
+    {
+      "trait": 5,
+      "jobExperienceTemplates": [
+        {
+          "jobNameTemplates": [
+            "Community Standards Enforcer",
+            "Digital Environment Curator",
+            "Trust & Safety Specialist"
+          ],
+          "jobDescriptionTemplates": [
+            "Moderated a 200,000-member online community with a team of 6 volunteers and an iron will.",
+            "Authored the community guidelines document that reduced rule violations by 65% in the first month of enforcement.",
+            "Handled escalations with a calm that made users simultaneously grateful and slightly afraid.",
+            "Banned 4,000 accounts in a single weekend during a coordinated raid. Did not flinch."
+          ]
+        },
+        {
+          "jobNameTemplates": [
+            "Forum Arbiter",
+            "Online Community Manager",
+            "Content Policy Lead"
+          ],
+          "jobDescriptionTemplates": [
+            "Developed an escalation matrix for edge-case violations that reduced moderator decision fatigue by 40%.",
+            "Maintained neutrality during three separate community-wide controversies. Earned the grudging respect of all parties.",
+            "Trained and onboarded 25 new moderators across two platforms, including a written test and a simulated chaos scenario."
+          ]
+        }
+      ],
+      "personalProjectTemplates": [
+        {
+          "projectNames": [
+            "The Moderation Manual",
+            "Community Health Index",
+            "Project: Civil Discourse"
+          ],
+          "descriptionTemplates": [
+            "Wrote a 60-page community moderation handbook that has been adopted by seven independent online communities.",
+            "Built a bot suite to assist with auto-moderation that reduced human review queue by 80% while maintaining accuracy.",
+            "Founded a Discord server dedicated to constructive debate with strict rules and surprisingly warm vibes."
+          ]
+        }
+      ],
+      "educationTemplates": [
+        {
+          "schoolNames": [
+            "Institute for Online Community Studies",
+            "Digital Ethics and Governance School",
+            "The Civility Sciences Academy"
+          ],
+          "degreeNames": [
+            "B.A. in Digital Community Management",
+            "M.S. in Online Trust and Safety",
+            "Certificate in Content Policy and Enforcement"
+          ],
+          "descriptionTemplates": [
+            "Thesis examined the long-term psychological effects of moderation work. Submitted it with the detachment of someone who had seen things.",
+            "Founded the university's first Digital Ethics Review Board. Immediately had to moderate a dispute within the board.",
+            "Completed a practicum moderating a live forum during finals week. Considered the most stressful real-world simulation available."
+          ]
+        }
+      ],
+      "funFactTemplates": [
+        "Reads every Terms of Service document they encounter. Voluntarily.",
+        "Can identify a bad-faith argument within the first sentence.",
+        "Has a personal tier list of the worst things people say online. It is updated monthly.",
+        "Once deescalated a heated argument at a family dinner using only moderator instincts and a timeout warning."
+      ]
+    }
+  ]
+}

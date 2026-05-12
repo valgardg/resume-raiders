@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f598b4662f81f4a3a982ab2d146436c7, type: 3}
+  m_Name: DraglavIndug
+  m_EditorClassIdentifier: Assembly-CSharp::ApplicantSO
+  applicantName: Raglav Ingud
+  applicantPhoto: {fileID: 0}
+  jobExperiences:
+  - trait: 13
+    jobName: Senior LooxMaxxer
+    jobDescription: Looxsmaxxing hard af
+  personalProjects:
+  - trait: 0
+    projectName: Youth Fortnite Coach
+    projectDescription: Lead team to state championship
+  education:
+  - trait: 9
+    degreeName: Data & Meme Science
+    institutionName: Harvarld University
+    description: Graduated with Honours
+  funFact:
+    trait: 0
+    factDescription: Loves turtles

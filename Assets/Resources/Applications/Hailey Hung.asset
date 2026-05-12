@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f598b4662f81f4a3a982ab2d146436c7, type: 3}
+  m_Name: Hailey Hung
+  m_EditorClassIdentifier: Assembly-CSharp::ApplicantSO
+  applicantName: Hailey Hung
+  applicantPhoto: {fileID: 0}
+  jobExperiences:
+  - trait: 1
+    jobName: Lead Influencer @ Landspitalinn
+    jobDescription: Lead influencer at Landspitalinn managing all social meida content
+      and outreach
+  - trait: 10
+    jobName: Senior Cat Herder
+    jobDescription: Herded monthly cat herds through Icelandic migration paths
+  personalProjects: []
+  education:
+  - trait: 11
+    degreeName: Phd Foreign Origami Policy
+    institutionName: University of Maylarnd
+    description: Graduated with 4.2 GPA
+  funFact:
+    trait: 6
+    factDescription: Is crazy good at adapting to whatever the world throws at her,
+      including devastating debt!
