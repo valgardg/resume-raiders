@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
     public static event Action OnGameUnpause;
     public GameTime gameTime;
     public ResumeManager resumeManager;
-
+    public ApplicantData applicantData;
     public UIManager uiManager;
 
     private void Start()
     {
         gameTime.Initialize();
-        resumeManager.Initialize(gameTime);
+        applicantData.Initialize();
+        resumeManager.Initialize(gameTime, applicantData);
         uiManager.Initialize();
     }
 

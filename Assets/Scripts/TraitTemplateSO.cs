@@ -5,7 +5,8 @@ using UnityEngine;
 public class TraitTemplate
 {
     public ApplicantTrait trait;
-
+    public string traitTitle;
+    public string traitDescription;
     public List<JobExperienceTemplate> jobExperienceTemplates;
     public List<PersonalProjectTemplate> personalProjectTemplates;
     public List<EducationTemplate> educationTemplates;

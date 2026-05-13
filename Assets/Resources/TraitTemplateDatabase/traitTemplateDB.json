@@ -2,6 +2,8 @@
   "templates": [
     {
       "trait": 0,
+      "traitTitle": "Locking in",
+      "traitDescription": "The undeniable ability to focus on the task at hand and get the job done no matter what is in the way",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
@@ -71,6 +73,8 @@
     },
     {
       "trait": 1,
+      "traitTitle": "Cat herding",
+      "traitDescription": "The ability to direct and command a fleet of cats with unwaivering authority and loyalty",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
@@ -140,6 +144,8 @@
     },
     {
       "trait": 2,
+      "traitTitle": "Goblin mode",
+      "traitDescription": "Self care is important, and going goblin mode is the ultimate form of self care by not caring about anything anymore",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
@@ -209,6 +215,8 @@
     },
     {
       "trait": 3,
+      "traitTitle": "Looxmaxxing",
+      "traitDescription": "Looking good isn't just something you do, its something you live. Entire empires have been built on appearances worthy of them.",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
@@ -278,6 +286,8 @@
     },
     {
       "trait": 4,
+      "traitTitle": "Streaming",
+      "traitDescription": "The ability to captivate and cultivate an audience, and then monitizing this, as seen on Spasm (or was it itch?)",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
@@ -347,6 +357,8 @@
     },
     {
       "trait": 5,
+      "traitTitle": "Moderation",
+      "traitDescription": "When the normies come banging on the doors of your favourite subreddit, someones gotta do the dirty work and lay down the law",
       "jobExperienceTemplates": [
         {
           "jobNameTemplates": [
