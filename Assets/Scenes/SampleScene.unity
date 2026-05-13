@@ -1491,7 +1491,6 @@ RectTransform:
   - {fileID: 1701229498}
   - {fileID: 1459952130}
   - {fileID: 135276293}
-  - {fileID: 729519152}
   - {fileID: 1116247534}
   - {fileID: 1244942294}
   - {fileID: 20216252}
@@ -2853,6 +2852,7 @@ MonoBehaviour:
   losePanel: {fileID: 20216251}
   pauseMenu: {fileID: 267793148}
   helpTextPanel: {fileID: 961320818}
+  progressBar: {fileID: 1943646306}
 --- !u!4 &541129419
 Transform:
   m_ObjectHideFlags: 0
@@ -3531,6 +3531,7 @@ GameObject:
   - component: {fileID: 729519152}
   - component: {fileID: 729519154}
   - component: {fileID: 729519153}
+  - component: {fileID: 729519155}
   m_Layer: 5
   m_Name: ApplicationsLeft
   m_TagString: Untagged
@@ -3550,11 +3551,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 265293573}
+  m_Father: {fileID: 1116247534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 640.2206, y: -24.947876}
+  m_AnchoredPosition: {x: 397.8108, y: 21}
   m_SizeDelta: {x: 215.8584, y: 54.3127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729519153
@@ -3657,6 +3658,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729519151}
   m_CullTransparentMesh: 1
+--- !u!114 &729519155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729519151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &734645145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +4725,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961320818}
   m_CullTransparentMesh: 1
+--- !u!1 &1051408640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051408642}
+  - component: {fileID: 1051408641}
+  m_Layer: 0
+  m_Name: JobPostManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1051408641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051408640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5aa9f7b3bc2d47e08e565f9deb09878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JobPostingManager
+--- !u!4 &1051408642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051408640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 580.1941, y: 285.04993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073339441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4810,6 +4875,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 729519152}
   - {fileID: 1943646302}
   m_Father: {fileID: 265293573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5813,6 +5879,8 @@ MonoBehaviour:
   resumeManager: {fileID: 1895719482}
   applicantData: {fileID: 1539047628}
   uiManager: {fileID: 541129418}
+  gameState: {fileID: 11400000, guid: 17326d64f90c64e679a8ac890e6e01b3, type: 2}
+  jobPostingManager: {fileID: 1051408641}
 --- !u!4 &1303980565
 Transform:
   m_ObjectHideFlags: 0
@@ -7157,7 +7225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065f7c88fc50747828f9bcbd65c32c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  currentJobPostingSO: {fileID: 11400000, guid: 3e0e4f26d29b84e20a0942caf2bda0e0, type: 2}
+  currentJobPostingSO: {fileID: 0}
   resumePrefab: {fileID: 6517692757448050825, guid: 268698afb362243e99de4a69fa11ac45, type: 3}
   jobPostingPrefab: {fileID: 5655837236352494465, guid: b63d54f97b6d1418dba249ab7225de7a, type: 3}
   canvasContainer: {fileID: 265293573}
@@ -7285,6 +7353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d6fd844d1543418d6fdfd07fc6bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  progressText: {fileID: 729519153}
   currentProgress: 0
 --- !u!1 &1971751867
 GameObject:
@@ -9390,3 +9459,4 @@ SceneRoots:
   - {fileID: 1787005746}
   - {fileID: 541129419}
   - {fileID: 1539047629}
+  - {fileID: 1051408642}

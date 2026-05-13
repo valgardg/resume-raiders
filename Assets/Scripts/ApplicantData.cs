@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class ApplicantData : MonoBehaviour
 {
-    private Dictionary<ApplicantTrait, int> generatedTraitCounts = new Dictionary<ApplicantTrait, int>();
-
-    private List<ApplicantSO> applicantPool = new List<ApplicantSO>();
-    public List<ApplicantSO> ApplicantPool => applicantPool;
     private TraitTemplateDatabase traitTemplateDatabase;
+    private TraitTemplateDatabase currentTraitPool;
+    public TraitTemplateDatabase CurrentTraitPool => currentTraitPool;
 
-    public void Initialize()
+    private GameStateSO gameState;
+
+    public void Initialize(GameStateSO gameState)
     {
-        GameManager.OnGameStart += LoadApplicantPool;
-        GameManager.OnGameRestart += LoadApplicantPool;
-        LoadApplicantPool();
+        this.gameState = gameState;
+
+        LoadApplicantData();
+        GameManager.OnGameRestart += LoadApplicantData;
     }
 
-    // Load full trait template data from json
+    // Load full trait template data from json and populate initial traiat pool
     private void LoadApplicantData()
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("TraitTemplateDatabase/traitTemplateDB");
@@ -31,40 +32,25 @@ public class ApplicantData : MonoBehaviour
         TraitTemplateDatabase data = ScriptableObject.CreateInstance<TraitTemplateDatabase>();
         JsonUtility.FromJsonOverwrite(jsonFile.text, data);
         traitTemplateDatabase = data; // Store the loaded data in the class variable for later use
-    }
 
-    // Generate a pool of applicants based on the trait templates
-    private void LoadApplicantPool()
-    {
-        applicantPool.Clear();
-        
-        LoadApplicantData();
-
-        for (int i = 0; i < 10; i++)
+         // set trait pool as only two random traits from full list
+        currentTraitPool = ScriptableObject.CreateInstance<TraitTemplateDatabase>();
+        currentTraitPool.templates = new TraitTemplate[gameState.traitPoolSize];
+        for (int i = 0; i < gameState.traitPoolSize; i++)
         {
-            ApplicantSO applicant = GenerateApplicant(traitTemplateDatabase);
-            applicantPool.Add(applicant);
-        }
-
-        Debug.Log("Final Trait Counts in Generated Applicants:");
-        foreach (var kvp in generatedTraitCounts)            {
-            Debug.Log("Trait: " + kvp.Key + ", Count: " + kvp.Value);
+            TraitTemplate randomTemplate = traitTemplateDatabase.templates[Random.Range(0, traitTemplateDatabase.templates.Length)];
+            while (System.Array.Exists(currentTraitPool.templates, t => t == randomTemplate))
+            {
+                randomTemplate = traitTemplateDatabase.templates[Random.Range(0, traitTemplateDatabase.templates.Length)];
+            }
+            currentTraitPool.templates[i] = randomTemplate;
+            Debug.Log("Selected trait for current pool: " + randomTemplate.trait);
         }
     }
 
     public ApplicantSO GetNextAppliacnt()
     {
-        if (applicantPool.Count == 0)
-        {
-            Debug.Log("No more applicants in the pool, making one!");
-            return GenerateApplicant(traitTemplateDatabase);
-        }
-
-        int randomIndex = Random.Range(0, applicantPool.Count);
-        ApplicantSO currentApplicantSO = applicantPool[randomIndex];
-        applicantPool.RemoveAt(randomIndex);
-
-        return currentApplicantSO;
+        return GenerateApplicant(currentTraitPool);
     }
 
     // Generate a single applicant from our trait templates

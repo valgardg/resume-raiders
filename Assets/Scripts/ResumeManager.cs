@@ -5,7 +5,7 @@ using UnityEngine;
 public class ResumeManager : MonoBehaviour
 {
     private ApplicantSO currentApplicantSO;
-    public JobPostingSO currentJobPostingSO;
+    [SerializeField] private JobPostingSO currentJobPostingSO;
     public GameObject resumePrefab;
     public GameObject jobPostingPrefab;
     public Transform canvasContainer;
@@ -15,11 +15,16 @@ public class ResumeManager : MonoBehaviour
     private GameObject currentResumeGO;
     private GameObject currentJobPostingGO;
     private ApplicantData applicantData;
+    private JobPostingManager jobPostingManager;
 
-    public void Initialize(GameTime gameTime, ApplicantData applicantData)
+    private GameStateSO gameState;
+
+    public void Initialize(GameStateSO gameState, GameTime gameTime, ApplicantData applicantData, JobPostingManager jobPostingManager)
     {
+        this.gameState = gameState;
         this.gameTime = gameTime;
         this.applicantData = applicantData;
+        this.jobPostingManager = jobPostingManager;
         GameManager.OnGameStart += GetNextResume;
         GameManager.OnGameRestart += GetNextResume;
     }
@@ -59,8 +64,8 @@ public class ResumeManager : MonoBehaviour
     {
         if (currentJobPostingSO == null)
         {
-            Debug.LogError("Current Job Posting SO is not set!");
-            return;
+            Debug.LogError("Current Job Posting SO is not set, generating one!");
+            currentJobPostingSO = jobPostingManager.GetJobPosting();
         }
 
         // Instantiate the job posting prefab and set the data
@@ -86,6 +91,7 @@ public class ResumeManager : MonoBehaviour
         if (meetsRequirements)
         {
             Debug.Log("Resume meets requirements!");
+            gameState.IncrementHires();
         }
         else
         {

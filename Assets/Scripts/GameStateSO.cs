@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(
@@ -16,8 +14,13 @@ public class GameStateSO : ScriptableObject
     public int day = 1;
     public float timePenalty;
 
-    [Header("Traits")]
-    public List<TraitTemplate> traitPool = new();
+    [Header("Trait related logic")]
+    public int traitPoolSize = 3; // trait pool size of applicant traits
+    public int desiredTraitsPerJobPosting = 1; // how many traits each job posting requires
+    public int undesiredTraitsPerJobPosting = 1; // how many undesired traits each job posting has
+
+
+    public event System.Action OnFullfilledHires;
 
     public void ResetState()
     {
@@ -25,5 +28,15 @@ public class GameStateSO : ScriptableObject
 
         day = 1;
         timePenalty = 0f;
+        traitPoolSize = 3;
+    }
+
+    public void IncrementHires()
+    {
+        acceptedApplicants++;
+        if (acceptedApplicants >= requiredApplicants)
+        {
+            OnFullfilledHires?.Invoke();
+        }
     }
 }
