@@ -15,12 +15,14 @@ public class GameTime : MonoBehaviour
     private float timeLeft = GAME_DURATION;
     private bool timeRunning = false;
 
-    public void Initialize()
+    public void Initialize(GameStateSO gameState)
     {
         GameManager.OnGameStart += () => timeRunning = true;
         GameManager.OnGameRestart += RestartTime;
         GameManager.OnGamePause += () => timeRunning = false;
         GameManager.OnGameUnpause += () => timeRunning = true;
+
+        gameState.OnFullfilledHires += () => timeRunning = false;
     }
 
     private void Update()

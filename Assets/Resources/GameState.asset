@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cd3469947f545859fe70dd29e8a1f3, type: 3}
   m_Name: GameState
   m_EditorClassIdentifier: Assembly-CSharp::GameStateSO
-  requiredApplicants: 1
+  requiredApplicants: 3
   acceptedApplicants: 0
   day: 1
   timePenalty: 0
   traitPoolSize: 3
+  desiredTraitsPerJobPosting: 1
+  undesiredTraitsPerJobPosting: 1

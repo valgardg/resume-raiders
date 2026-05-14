@@ -5,9 +5,8 @@ public class UIManager : MonoBehaviour
     public GameObject losePanel;
     public GameObject pauseMenu;
     public GameObject helpTextPanel;
+    public GameObject endOfDayPanel;
     public ProgressBar progressBar;
-
-    private GameStateSO gameState;
 
     public void Initialize(GameStateSO gameState)
     {
@@ -18,13 +17,20 @@ public class UIManager : MonoBehaviour
         GameManager.OnGamePause += DisplayPauseMenu;
         GameManager.OnGameUnpause += () => pauseMenu.SetActive(false);
         GameManager.OnGameStart += () => helpTextPanel.SetActive(false);
-
+        gameState.OnFullfilledHires += DisplayEndOfDayPanel;
     }
 
     private void DisplayPauseMenu()
     {
         pauseMenu.SetActive(true);
         RectTransform rectTransform = pauseMenu.GetComponent<RectTransform>();
+        rectTransform.SetAsLastSibling();
+    }
+
+    private void DisplayEndOfDayPanel()
+    {
+        endOfDayPanel.SetActive(true);
+        RectTransform rectTransform = endOfDayPanel.GetComponent<RectTransform>();
         rectTransform.SetAsLastSibling();
     }
 }

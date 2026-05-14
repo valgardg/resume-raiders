@@ -12,7 +12,6 @@ public class GameStateSO : ScriptableObject
 
     [Header("Time")]
     public int day = 1;
-    public float timePenalty;
 
     [Header("Trait related logic")]
     public int traitPoolSize = 3; // trait pool size of applicant traits
@@ -25,9 +24,7 @@ public class GameStateSO : ScriptableObject
     public void ResetState()
     {
         acceptedApplicants = 0;
-
         day = 1;
-        timePenalty = 0f;
         traitPoolSize = 3;
     }
 

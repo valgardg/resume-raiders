@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         uiManager.Initialize(gameState);
-        gameTime.Initialize();
+        gameTime.Initialize(gameState);
         applicantData.Initialize(gameState);
         jobPostingManager.Initialize(gameState, applicantData);
         resumeManager.Initialize(gameState, gameTime, applicantData, jobPostingManager);
@@ -52,5 +52,10 @@ public class GameManager : MonoBehaviour
     public void UnpauseGame()
     {
         OnGameUnpause?.Invoke();
+    }
+
+    public void StartNewDay()
+    {
+        RestartGame();
     }
 }

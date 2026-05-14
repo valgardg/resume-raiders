@@ -17,7 +17,7 @@ public class ProgressBar : MonoBehaviour
     {
         float progress = gameState.acceptedApplicants / gameState.requiredApplicants;
         // Clamp the progress value between 0 and 1
-        progress = Mathf.Clamp01(progress);
+        // progress = Mathf.Clamp01(progress);
 
         // parent width
         float parentWidth = ((RectTransform)transform.parent).rect.width;
